@@ -8,7 +8,7 @@ import Reciept from './BillTypes/Reciept';
 
 const Bill = () => {
   const { docid, userid, doctype } = useParams();
-  // console.log(docid, userid,doctype)
+console.log(docid, userid,doctype)
   const [document, setDocument] = useState({})
   const [loading, setLoading] = useState(true)
   const getdocument = async () => {
