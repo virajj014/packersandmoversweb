@@ -22,7 +22,7 @@ const Bill = () => {
     })
       .then(res => res.json())
       .then(data => {
-        // console.log(data.doctype)
+        console.log(data)
         setDocument(data)
         setLoading(false)
       })
