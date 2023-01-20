@@ -16,7 +16,7 @@ const Bill = () => {
     fetch('/getdocbyuseridanddocid', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json; charset=utf-8'
       },
       body: JSON.stringify({ userid, docid, doctype })
     })
