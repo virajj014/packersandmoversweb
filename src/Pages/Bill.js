@@ -6,7 +6,7 @@ import PackingList from './BillTypes/PackingList';
 import Quotation from './BillTypes/Quotation'
 import Reciept from './BillTypes/Reciept';
 // import { PDFDownloadLink } from '@react-pdf/renderer';
-
+import ReactToPrint from 'react-to-print';
 
 // "proxy": "https://easy-gold-piranha-gear.cyclic.app/",
 const Bill = () => {
@@ -39,6 +39,13 @@ const Bill = () => {
   }, [])
   return (
     <div>
+      <ReactToPrint
+        trigger={() => <button>Print</button>}
+        content={() => <Quotation document={document} />}
+        documentTitle={document.docid}
+        pageStyle="@page { size: A4 portrait; }"
+        onAfterPrint={() => { console.log('after print') }}
+      />
       {
         document.doctype === 'quotation' && <Quotation document={document} />
       }
