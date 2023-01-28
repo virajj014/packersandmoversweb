@@ -38,14 +38,8 @@ const Bill = () => {
     docid && userid && doctype && getdocument()
   }, [])
   return (
-    <div>
-      <button onClick={
-        () => {
-          window.print()
-        }
-      }
-        className='printbtn'
-      >Print</button>
+    <div className='billcont'>
+
       {
         document.doctype === 'quotation' && <Quotation document={document} />
       }
@@ -64,7 +58,13 @@ const Bill = () => {
       {
         loading && <h1>Loading...</h1>
       }
-
+      <button onClick={
+        () => {
+          window.print()
+        }
+      }
+        className='printbtn'
+      >Print</button>
     </div>
   )
 }
