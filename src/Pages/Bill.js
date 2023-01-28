@@ -5,7 +5,7 @@ import Lrbilty from './BillTypes/Lrbilty';
 import PackingList from './BillTypes/PackingList';
 import Quotation from './BillTypes/Quotation'
 import Reciept from './BillTypes/Reciept';
-import { PDFDownloadLink } from '@react-pdf/renderer';
+// import { PDFDownloadLink } from '@react-pdf/renderer';
 
 
 // "proxy": "https://easy-gold-piranha-gear.cyclic.app/",
