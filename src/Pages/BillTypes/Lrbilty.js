@@ -12,38 +12,38 @@ const Lrbilty = ({ document }) => {
     React.useEffect(() => {
         const costform = doc.doc.costform;
         const descriptionform = doc.doc.descriptionform;
-      const total =
-        (eval(descriptionform.householditemswtcharged) >= 0 ? eval(descriptionform.householditemswtcharged) : 0)
-        + (eval(descriptionform.officeitemswtcharged) >= 0 ? eval(descriptionform.officeitemswtcharged) : 0)
-        + (eval(descriptionform.industrialitemswtcharged) >= 0 ? eval(descriptionform.industrialitemswtcharged) : 0)
-        + (eval(descriptionform.cartransportationwtcharged) >= 0 ? eval(descriptionform.cartransportationwtcharged) : 0)
-        + (eval(descriptionform.biketransportationwtcharged) >= 0 ? eval(descriptionform.biketransportationwtcharged) : 0)
-        + (eval(descriptionform.asperlistattachedwtcharged) >= 0 ? eval(descriptionform.asperlistattachedwtcharged) : 0)
-        + (eval(costform.packingchargerate) >= 0 ? eval(costform.packingchargerate) : 0)
-        + (eval(costform.unpackingchargerate) >= 0 ? eval(costform.unpackingchargerate) : 0)
-        + (eval(costform.loadingchargerate) >= 0 ? eval(costform.loadingchargerate) : 0)
-        + (eval(costform.unloadingchargerate) >= 0 ? eval(costform.unloadingchargerate) : 0)
-        + (eval(costform.freightchargesrate) >= 0 ? eval(costform.freightchargesrate) : 0)
-        + (eval(costform.grchargerate) >= 0 ? eval(costform.grchargerate) : 0)
-        + (eval(costform.insurancechargesrate) >= 0 ? eval(costform.insurancechargesrate) : 0)
-        + (eval(costform.discount) >= 0 ? eval(costform.discount) : 0)
-  
-  
-      const tgst = total * (costform.gst / 100) + total * (costform.igst / 100)
-      // console.log(tgst)
-      const total1 = parseFloat(total) + parseFloat(tgst)
-      setgetotal(total1)
-  
-      const totalpaid =
-        (eval(costform.packingchargepaid) >= 0 ? eval(costform.packingchargepaid) : 0)
-        + (eval(costform.unpackingchargepaid) >= 0 ? eval(costform.unpackingchargepaid) : 0)
-        + (eval(costform.loadingchargepaid) >= 0 ? eval(costform.loadingchargepaid) : 0)
-        + (eval(costform.unloadingchargepaid) >= 0 ? eval(costform.unloadingchargepaid) : 0)
-        + (eval(costform.freightchargespaid) >= 0 ? eval(costform.freightchargespaid) : 0)
-        + (eval(costform.grchargepaid) >= 0 ? eval(costform.grchargepaid) : 0)
-        + (eval(costform.insurancechargespaid) >= 0 ? eval(costform.insurancechargespaid) : 0)
-  
-      settotalpaid(totalpaid)
+        const total =
+            (eval(descriptionform.householditemswtcharged) >= 0 ? eval(descriptionform.householditemswtcharged) : 0)
+            + (eval(descriptionform.officeitemswtcharged) >= 0 ? eval(descriptionform.officeitemswtcharged) : 0)
+            + (eval(descriptionform.industrialitemswtcharged) >= 0 ? eval(descriptionform.industrialitemswtcharged) : 0)
+            + (eval(descriptionform.cartransportationwtcharged) >= 0 ? eval(descriptionform.cartransportationwtcharged) : 0)
+            + (eval(descriptionform.biketransportationwtcharged) >= 0 ? eval(descriptionform.biketransportationwtcharged) : 0)
+            + (eval(descriptionform.asperlistattachedwtcharged) >= 0 ? eval(descriptionform.asperlistattachedwtcharged) : 0)
+            + (eval(costform.packingchargerate) >= 0 ? eval(costform.packingchargerate) : 0)
+            + (eval(costform.unpackingchargerate) >= 0 ? eval(costform.unpackingchargerate) : 0)
+            + (eval(costform.loadingchargerate) >= 0 ? eval(costform.loadingchargerate) : 0)
+            + (eval(costform.unloadingchargerate) >= 0 ? eval(costform.unloadingchargerate) : 0)
+            + (eval(costform.freightchargesrate) >= 0 ? eval(costform.freightchargesrate) : 0)
+            + (eval(costform.grchargerate) >= 0 ? eval(costform.grchargerate) : 0)
+            + (eval(costform.insurancechargesrate) >= 0 ? eval(costform.insurancechargesrate) : 0)
+            + (eval(costform.discount) >= 0 ? eval(costform.discount) : 0)
+
+
+        const tgst = total * (costform.gst / 100) + total * (costform.igst / 100)
+        // console.log(tgst)
+        const total1 = parseFloat(total) + parseFloat(tgst)
+        setgetotal(total1)
+
+        const totalpaid =
+            (eval(costform.packingchargepaid) >= 0 ? eval(costform.packingchargepaid) : 0)
+            + (eval(costform.unpackingchargepaid) >= 0 ? eval(costform.unpackingchargepaid) : 0)
+            + (eval(costform.loadingchargepaid) >= 0 ? eval(costform.loadingchargepaid) : 0)
+            + (eval(costform.unloadingchargepaid) >= 0 ? eval(costform.unloadingchargepaid) : 0)
+            + (eval(costform.freightchargespaid) >= 0 ? eval(costform.freightchargespaid) : 0)
+            + (eval(costform.grchargepaid) >= 0 ? eval(costform.grchargepaid) : 0)
+            + (eval(costform.insurancechargespaid) >= 0 ? eval(costform.insurancechargespaid) : 0)
+
+        settotalpaid(totalpaid)
     }, [doc])
 
 

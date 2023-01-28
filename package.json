@@ -2,8 +2,9 @@
   "name": "packersandmoversweb",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://easy-gold-piranha-gear.cyclic.app/",
   "dependencies": {
+    "@react-18-pdf/renderer": "^2.3.4",
+    "@react-pdf/renderer": "^3.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

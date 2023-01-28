@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/" element={<Bill/>} />
         <Route path="/bill" element={<Bill/>} />
         <Route path="/bill/:userid/:doctype/:docid" element={<Bill/>} />
         <Route path="*" element={<h1>404</h1>} />

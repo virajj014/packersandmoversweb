@@ -5,13 +5,11 @@ import Lrbilty from './BillTypes/Lrbilty';
 import PackingList from './BillTypes/PackingList';
 import Quotation from './BillTypes/Quotation'
 import Reciept from './BillTypes/Reciept';
-import { PDFDownloadLink } from '@react-pdf/renderer';
-
 
 // "proxy": "https://easy-gold-piranha-gear.cyclic.app/",
 const Bill = () => {
   const { docid, userid, doctype } = useParams();
-  // console.log(docid, userid, doctype)
+  console.log(docid, userid, doctype)
   const [document, setDocument] = useState({})
   const [loading, setLoading] = useState(true)
   const getdocument = async () => {
@@ -35,7 +33,7 @@ const Bill = () => {
   }
 
   useEffect(() => {
-    docid && userid && doctype && getdocument()
+    getdocument()
   }, [])
   return (
     <div>
@@ -57,7 +55,6 @@ const Bill = () => {
       {
         loading && <h1>Loading...</h1>
       }
-
     </div>
   )
 }

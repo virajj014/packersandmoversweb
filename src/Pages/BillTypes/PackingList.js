@@ -69,10 +69,7 @@ const PackingList = (document) => {
             {/* packing ,unpacking , loading , unloading, truck size , pro fright charges , car transportation, handyman charges, escort charges , insurance charfes , remarks , fov transit policy, any other charges,
             tax type , gst , cgst ,sgst , Igst , total , discount , final amount , remarks*/}
             <div className='items'>
-                {/* <div className='c2'>
-                    <label>Packing Charges</label>
-                    <p>Rs. {doc.doc.costform.packingcharge}</p>
-                </div> */}
+              
                 {
                     doc.doc.items.map((item, index) => {
                         return (
