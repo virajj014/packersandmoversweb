@@ -39,11 +39,13 @@ const Bill = () => {
   }, [])
   return (
     <div>
-     <button onClick={
+      <button onClick={
         () => {
           window.print()
         }
-     }>Print</button>
+      }
+        className='printbtn'
+      >Print</button>
       {
         document.doctype === 'quotation' && <Quotation document={document} />
       }

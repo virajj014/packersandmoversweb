@@ -258,3 +258,18 @@
     font-size: 50px;
     opacity: 0.2;
 }
+
+
+.printbtn{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    font-size: 40px;
+    /* opacity: 0.2;*/
+    color: #008080;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid #008080;
+}
