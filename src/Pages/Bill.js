@@ -39,13 +39,11 @@ const Bill = () => {
   }, [])
   return (
     <div>
-      <ReactToPrint
-        trigger={() => <button>Print</button>}
-        content={() => <Quotation document={document} />}
-        documentTitle={document.docid}
-        pageStyle="@page { size: A4 portrait; }"
-        onAfterPrint={() => { console.log('after print') }}
-      />
+     <button onClick={
+        () => {
+          window.print()
+        }
+     }>Print</button>
       {
         document.doctype === 'quotation' && <Quotation document={document} />
       }
