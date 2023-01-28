@@ -7,8 +7,8 @@ import Quotation from './BillTypes/Quotation'
 import Reciept from './BillTypes/Reciept';
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 import ReactToPrint from 'react-to-print';
-
-// "proxy": "https://easy-gold-piranha-gear.cyclic.app/",
+// http://localhost:8000
+//"https://dark-gold-lovebird-cuff.cyclic.app ",
 const Bill = () => {
   const { docid, userid, doctype } = useParams();
   // console.log(docid, userid, doctype)

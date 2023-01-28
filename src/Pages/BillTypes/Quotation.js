@@ -2,7 +2,7 @@ import React from 'react'
 import './billFormat.css'
 // http://localhost:3000/bill/63aa05847bab0845931b3780/quotation/Q-1
 const Quotation = (document) => {
-    // console.log(document)
+    // console.log(document)                            
     const [doc, setDoc] = React.useState(document.document);
     // console.log(doc.doc)
     const [getotal, setgetotal] = React.useState(0);
@@ -44,7 +44,8 @@ const Quotation = (document) => {
                 <div className='s1'>
                     <img src={doc?.images?.parentcompanylogo} alt='logo' />
                     <div className='s1in'>
-                        <h1>{doc.doc.basicform.companyname ? doc.doc.basicform.companyname : '---'}</h1>
+                        <h1>{doc.userdata.companyname ? doc.userdata.companyname : '---'}</h1>
+
                         <p>{doc.userdata.address}</p>
                         <p>+91 {doc.userdata.phonenumber}, {doc.userdata.email}</p>
                         <p>GSTIN: {doc.userdata.gstin}</p>
@@ -52,7 +53,7 @@ const Quotation = (document) => {
                     <img src={doc.images.yourcompanylogo} alt='logo' />
                 </div>
                 <div className='hr'></div>
-                <div className='hr'></div>
+                {/* <div className='hr'></div> */}
                 <div className='s2'>
                     <div className='s2in'>
                         <div className='s2cont'>
@@ -107,7 +108,7 @@ const Quotation = (document) => {
                         </div>
                     </div>
                 </div>
-                <div className='hr'></div>
+                {/* <div className='hr'></div> */}
                 <div className='hr'></div>
                 <div className='s3'>
                     <h1 className='heading2'>1. Packing Support</h1>
@@ -161,21 +162,9 @@ const Quotation = (document) => {
                     </div>
                 </div>
 
-                <div className='hr'></div>
-                <div className='s4'>
-                    <label>Remarks</label>
-                    <p>
-                        Remark 1 : {doc.doc.costform.remarks1 ? doc.doc.costform.remarks1 : '-'}
-                    </p>
-                    <p>
-                        Remark 2 : {doc.doc.costform.remarks2 ? doc.doc.costform.remarks2 : '-'}
-                    </p>
-                    <label>Terms & Conditions</label>
-                    <p>
-                        {doc.userdata.quotationterms}
-                    </p>
-                </div>
-                <div className='hr'></div>
+                {/* <div className='hr'></div> */}
+
+                {/* <div className='hr'></div> */}
                 <div className='s5'>
                     <div className='s5in'>
                         <label>Bank Details</label>
@@ -212,11 +201,30 @@ const Quotation = (document) => {
 
                             <p>Rs. {getigst ? getigst : '0'}</p>
                         </div>
+
+
+                        <div className='s5in1'>
+                            <label>Total Amount</label>
+                            <p>Rs. {getfinaltotal}</p>
+                        </div>
                     </div>
                 </div>
 
                 <div className='s1'>
                     <img src={doc.images.signature} alt='logo' />
+                    <div className='s4'>
+                        <label>Remarks</label>
+                        <p>
+                            Remark 1 : {doc.doc.costform.remarks1 ? doc.doc.costform.remarks1 : '-'}
+                        </p>
+                        <p>
+                            Remark 2 : {doc.doc.costform.remarks2 ? doc.doc.costform.remarks2 : '-'}
+                        </p>
+                        <label>Terms & Conditions</label>
+                        <p>
+                            {doc.userdata.quotationterms}
+                        </p>
+                    </div>
                     <img src={doc.images.stamp} alt='logo' />
                 </div>
 

@@ -1,4 +1,4 @@
-.billcont{
+.billcont {
     width: 100%;
     height: 100%;
     display: flex;
@@ -8,6 +8,7 @@
     background-color: #fff;
     padding: 20px;
 }
+
 .a4sheet {
     width: 210mm;
     height: 297mm;
@@ -63,7 +64,7 @@
 }
 
 
-.s1in{
+.s1in {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -74,13 +75,14 @@
 .s1in h1 {
     color: #000;
 }
+
 .s1in p {
     color: #008080;
     font-size: 15px;
     font-weight: 600;
 }
 
-.hr{
+.hr {
     width: 100%;
     height: 3px;
     margin: 5px 0px;
@@ -88,7 +90,7 @@
 }
 
 
-.s2in{
+.s2in {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -97,34 +99,34 @@
     padding: 0px 20px;
 }
 
-.s2in p{
+.s2in p {
     font-size: 15px;
     font-weight: 600;
     color: #008080;
 }
 
 
-.s2cont{
+.s2cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 50%;
     padding: 0px 10px;
-} 
+}
 
-.s3 h1{
+.s3 h1 {
     font-size: 15px;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    margin: 10px 0px;
+    margin-top: 2px;
     width: 50%;
     /* background-color: #008080; */
     text-align: left;
 
 }
 
-.s3{
+.s3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +135,7 @@
     padding: 0px 20px;
 }
 
-.s3in{
+.s3in {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -141,7 +143,8 @@
     width: 100%;
     padding: 0px 20px;
 }
-.s3in1{
+
+.s3in1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -150,13 +153,15 @@
     padding: 0px;
     padding-right: 20px;
 }
-.s3in p,.s3in1 p{
+
+.s3in p,
+.s3in1 p {
     font-size: 15px;
     font-weight: 600;
     color: #008080;
 }
 
-.s4{
+.s4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,7 +169,8 @@
     width: 100%;
     padding: 0px 20px;
 }
-.s4 label{
+
+.s4 label {
     font-size: 13px;
     font-weight: 600;
     color: rgb(0, 0, 0);
@@ -173,7 +179,8 @@
     /* background-color: #008080; */
     text-align: left;
 }
-.s4 p{
+
+.s4 p {
     font-size: 12px;
     font-weight: 600;
     color: #008080;
@@ -182,7 +189,7 @@
 }
 
 
-.s5{
+.s5 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -190,7 +197,7 @@
     margin-bottom: 10px;
 }
 
-.s5in{
+.s5in {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +207,7 @@
     border: 2px solid rgb(199, 199, 199);
 }
 
-.s5in p{
+.s5in p {
     font-size: 15px;
     font-weight: 600;
     color: #008080;
@@ -208,7 +215,7 @@
     text-align: left;
 }
 
-.s5in label{
+.s5in label {
     font-size: 13px;
     font-weight: 600;
     color: rgb(0, 0, 0);
@@ -218,7 +225,7 @@
     text-align: left;
 }
 
-.s5in11{
+.s5in11 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -229,7 +236,8 @@
     border: 2px solid rgb(199, 199, 199);
 
 }
-.s5in1{
+
+.s5in1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -238,7 +246,8 @@
     padding: 0px;
     padding-right: 20px;
 }
-.s5in11 p{
+
+.s5in11 p {
     font-size: 15px;
     font-weight: 600;
     background-color: #008080;
@@ -248,7 +257,7 @@
     text-align: left;
 }
 
-.s5in11 label{
+.s5in11 label {
     font-size: 13px;
     font-weight: 600;
     color: rgb(0, 0, 0);
@@ -260,7 +269,7 @@
 
 
 
-.useruid{
+.useruid {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -270,7 +279,7 @@
 }
 
 
-.printbtn{
+.printbtn {
     font-size: 40px;
     /* opacity: 0.2;
     color: #008080; */
@@ -281,4 +290,78 @@
     /* border: 2px solid #008080; */
     z-index: 100;
     margin: 0px auto;
+}
+
+
+.descriptionform {
+    display: flex;
+}
+
+.descriptionformin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.descriptionformin1 p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #008080;
+    width: 100%;
+    text-align: left;
+    /* border-bottom: 1px solid rgb(199, 199, 199); */
+}
+
+.descriptionformin label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: 0px 0px;
+    width: 100%;
+    /* background-color: #008080; */
+    text-align: center;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 5px;
+    align-self: center;
+}
+
+.lrcostform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px;
+    border: 2px solid rgb(199, 199, 199);
+}
+
+.lrcostformin {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    align-items: center;
+}
+
+.lrcostformin label{
+    width: 40%;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 5px;
+    border-right: 1px solid rgb(199, 199, 199);
+}
+
+.lrcostformin p{
+    width: 20%;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
 }
